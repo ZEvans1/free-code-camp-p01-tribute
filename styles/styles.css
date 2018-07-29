@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+}
+body {
+  background: radial-gradient(circle, green , black , #373a3d );
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  /* min-height: 100%; */
+}
+#main{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-column-gap: 10px;
+  grid-row-gap: 10px; */
+  grid-template-rows: 100px auto;
+  grid-template-areas: 
+    "title title title"
+    "description image links";
+}
+
+#title {
+  grid-area: title;
+  margin: auto;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}
+
+#img-div {
+  grid-area: image;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#image-caption {
+  grid-area: image;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+}
+
+#tribute-info {
+  grid-area: description;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+}
+#info-div {
+  grid-area: description;
+  align-self: center;
+  justify-self: center;
+}
+#links-div {
+  grid-area: links;
+  align-self: center;
+  justify-self: center;
+}
+
+#tribute-link {
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+}
